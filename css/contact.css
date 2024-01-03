@@ -1,0 +1,443 @@
+* {padding: 0px; margin: 0px}
+
+.container {
+	width: 1360px; margin: auto;
+}
+
+body{
+	background: white;
+}
+
+menu{
+	width: 100%;
+	margin: auto;
+	background: white;
+	position: sticky; z-index: 1 ;
+	top: 0;
+}
+
+@keyframes growDown {
+    0% {
+        transform: scaleY(0);
+    }
+    80% {
+        transform: scaleY(1.1);
+    }
+    100% {
+        transform: scaleY(1);
+    }
+}
+
+.kiri img{
+	float : left;
+	padding : 10px;
+}
+
+nav ul li {
+	float: left; list-style: none;
+	margin-top: 20px;
+}
+
+nav ul li a{
+	margin-right: 30px; text-decoration: none;
+	padding: 3px 15px; color: black;
+}
+
+nav ul li ul{
+	display: none;
+}
+
+nav ul li:hover > ul{
+	display:block;
+    background-color: white;
+    padding: 5px;
+	animation: growDown 400ms ease-in-out forwards;
+}
+
+nav{
+    height: 40px; line-height:40px;
+    padding-bottom: 38px;
+}
+
+
+nav ul li ul{
+	position : absolute;
+}
+
+nav ul li ul li{
+	float : none;
+	position : relative;
+}
+
+nav ul li a:hover{color : blue;}
+
+nav ul li:hover{background: white;}
+
+.kanan img {
+	width: 20px;
+	height: 20px;
+	overflow: hidden;
+	float: left;
+	margin-top: 29px;
+	margin-left : 150px;
+}
+
+.kanan h4{
+	float: left;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+.sosmed img{
+	width: 20px;
+	height: 20px;
+	overflow: hidden;
+	float: left;
+	margin-top: 29px;
+	margin-left: 10px;
+}
+
+.search1 img{
+	margin-left: 30px;
+	padding: 26px 37px 26px 37px;
+	background-color: red;
+	width: 28px;
+	height: 25px;
+}
+
+.picturebox {
+	position: relative;
+}
+
+.picturebox img{
+	width: 100%;
+	height : 600px;
+}
+
+.picturebox h1{
+	position: absolute;
+	top: 24%;
+	left: 38%;
+	color : white;
+	font-size: 70px;
+	font-family: Lucida Handwriting;
+}
+
+.picturebox p {
+	position: absolute;
+	bottom: 45%;
+	left: 30%;
+	color : white;
+	font-size: 30px;
+	font-family : Helvetica;
+}
+
+iframe{
+	margin-left: 80px;
+	margin-top: 100px;
+}
+
+
+.get {
+	width : 100%;
+	height: 600px;
+	margin-top : 80px;
+}
+
+.get .text {
+	float : left;
+	margin-left: 100px;
+}
+
+.get .text h1 {
+	font-size : 50px;
+}
+
+.get .text .kiri {
+	float: left;
+}
+
+.get .text textarea {
+	margin-top: 10px;
+	width: 700px;
+	height: 200px;
+	font-size: 18px;
+}
+
+.get .text .tengah .kiri input {
+	width: 340px;
+	height: 40px;
+}
+
+
+.get .text .tengah .kanan input {
+	width: 340px;
+	height: 40px;
+	margin-left : 10px;
+}
+
+.get .text .bawah input {
+	width : 700px;
+	height: 40px;
+}
+
+.get .text button {
+	margin-top: 20px;
+	width : 120px;
+	height: 60px;
+	color: white;
+	cursor: pointer;
+	font-size : 18px;
+	background-color: #bdc3c7;
+	border-color: white;
+	transition : background-color 0.5s;
+}
+
+.get .text button:hover{
+	background-color : red;
+}
+
+.info img {
+	width: 40px;
+	height: 40px;
+    display: inline-block;
+	float: left;
+}
+
+.info {
+	margin-left: 150px;
+	margin-top: 100px;
+	width : 300px;
+	height: 300px;
+	color: gray;
+	float : left;
+}
+
+.rmh .tulis {
+	width: 230px;
+	height: 50px;
+	float: left;
+	margin-left: 20px;
+	margin-bottom: 30px;
+}
+
+.hp .tulis {
+	width: 230px;
+	height: 50px;
+	float: left;
+	margin-left: 20px;
+	margin-bottom: 30px;
+}
+
+.mail .tulis {
+	width: 230px;
+	height: 50px;
+	float: left;
+	margin-left: 20px;
+	margin-bottom: 30px;
+}
+
+footer {
+	width: 100%;
+	height: 600px;
+	background-color: #130f40;
+}
+
+.isifoot{
+	height: 570px;
+	width:100%;
+	background-color: #130f40;
+	float: left;
+}
+
+.ftravelo{
+	width: 240px;
+	color: gray;
+	padding-top: 100px;
+	padding-left: 100px;
+	float: left;
+	padding-right: 50px;
+}
+
+.tratas{
+	padding-bottom: 30px;
+}
+
+.tratas img{
+	width: 170px;
+}
+
+
+.trtengah .text p{
+	margin-bottom: 20px;
+	font-size: 17px;
+	color: grey;
+	text-decoration: none;
+	list-style: none;
+}
+
+.trtengah .link p{
+	margin-bottom: 20px;
+	font-size: 17px;
+	color: grey;
+	text-decoration: none;
+	list-style: none;
+	transition : color 0.5s;
+}
+
+.trtengah .link p:hover{
+	margin-bottom: 20px;
+	font-size: 17px;
+	color: red;
+	text-decoration: none;
+	list-style: none;
+}
+
+.trbawah a{
+	font-size: 20px;
+	width: 25px;
+	height: 20px;
+	float: left;
+	margin-top: 29px;
+	margin-right: 15px;
+	color: white;
+	transition: color 0.5s;
+}
+
+.trbawah a:hover{
+	color : red;
+}
+
+.trtengah a {
+	text-decoration: none;
+}
+
+
+.company{
+	padding-top:110px;
+	margin-left: 50px;
+	padding-right: 30px;
+	float: left;
+}
+
+.company h1{
+	color: white;
+	font-size: 26px;
+	margin-bottom: 50px;
+}
+
+.company a {
+	text-decoration: none;
+}
+
+.company p{
+	font-size: 20px;
+	margin-bottom: 10px;
+	text-decoration: none;
+	list-style: none;
+	color: gray;
+	transition: color 0.5s;
+}
+
+.company p:hover {
+	color: red;
+}
+
+.popular{
+	padding-top:110px;
+	margin-left: 50px;
+	float: left;
+}
+
+.popular a {
+	text-decoration: none;
+}
+
+
+.popular p{
+	text-decoration: none;
+	list-style: none;
+	color: gray;
+	transition: color 1s;
+}
+
+.popular p:hover{
+	color: red;
+}
+
+.popular .atas p{
+	color: white;
+	font-size: 26px;
+	margin-bottom: 50px;
+}
+
+.popular .bwhkiri{
+	float: left;
+	padding-right: 50px;
+}
+
+.popular .bwhkiri p{
+	margin-bottom: 10px;
+	font-size: 20px;
+}
+
+.popular .bwhkanan{
+	float: left;
+}
+
+.popular .bwhkanan p{
+	margin-bottom: 10px;
+	font-size: 20px;
+}
+
+.instagram{
+	padding-top:110px;
+	margin-left: 90px;
+	float: left;
+}
+
+.instagram p{
+	text-decoration: none;
+	list-style: none;
+	color: gray;
+}
+
+.instagram .igatas p {
+	color: white;
+	font-size: 26px;
+	margin-bottom: 50px;
+}
+
+.instagram img{
+	width: 70px;
+	height: 70px;
+	padding: 10px;
+	border-radius: 30px;
+}
+
+.copyright {
+	position: absolute;
+	display: block;
+	width: 1000px;
+	margin-top: 520px;
+	margin-left: 160px;
+	border-top: 2px solid black;
+
+}
+
+.copyright p {
+	color: white;
+	margin-top : 20px;
+	margin-left: 21%;
+	font-size: 18px;
+}
+
+.copyright a {
+	margin-left: 5px;
+	text-decoration: none;
+	color: red;
+}
+
+.copyright i {
+	color: red;
+}

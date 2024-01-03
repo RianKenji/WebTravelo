@@ -1,0 +1,973 @@
+* {padding: 0px; margin: 0px}
+
+.container {
+	width: 1360px; margin: auto;
+}
+
+body{
+	background: white;
+}
+
+menu{
+	width: 100%;
+	margin: auto;
+	background: white;
+	position: sticky; z-index: 1;
+	top: 0;
+}
+
+@keyframes growDown {
+    0% {
+        transform: scaleY(0);
+    }
+    80% {
+        transform: scaleY(1.1);
+    }
+    100% {
+        transform: scaleY(1);
+    }
+}
+
+.kiri img{
+	float : left;
+	padding : 10px;
+}
+
+nav ul li {
+	float: left; list-style: none;
+	margin-top: 20px;
+}
+
+nav ul li a{
+	margin-right: 30px; text-decoration: none;
+	padding: 3px 15px; color: black;
+}
+
+nav ul li ul{
+	display: none;
+}
+
+nav ul li:hover > ul{
+	display:block;
+    background-color: white;
+    padding: 5px;
+	animation: growDown 400ms ease-in-out forwards;
+}
+
+nav{
+    height: 40px; line-height:40px;
+    padding-bottom: 38px;
+}
+
+
+nav ul li ul{
+	position : absolute;
+}
+
+nav ul li ul li{
+	float : none;
+	position : relative;
+}
+
+nav ul li a:hover{color : blue;}
+
+nav ul li:hover{background: white;}
+
+.kanan img {
+	width: 20px;
+	height: 20px;
+	overflow: hidden;
+	float: left;
+	margin-top: 29px;
+	margin-left : 150px;
+}
+
+.kanan h4{
+	float: left;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+.sosmed img{
+	width: 20px;
+	height: 20px;
+	overflow: hidden;
+	float: left;
+	margin-top: 29px;
+	margin-left: 10px;
+}
+
+.search1 img{
+	margin-left: 25px;
+	padding: 26px 39px 26px 40px;
+	background-color: red;
+	width: 28px;
+	height: 25px;
+}
+
+article .slider {float: left; position: relative; width: 100%; height: 700px; background-color:#130f40;}
+article .slider input {display: none;}
+article .backgroundindonesia {position: absolute; width: 100%; transition: opacity 0.8s; height: 700px; opacity: 0;}
+article .backgroundmalaysia {position: absolute; width: 100%; transition: opacity 0.8s; height: 700px; opacity: 0;}
+article .backgroundsingapore {position: absolute; width: 100%; transition: opacity 0.8s; height: 700px; opacity: 0;}
+article .backgroundindonesia img {float: left; width: 100%; object-fit: cover; height: 700px;}
+article .backgroundmalaysia img {float: left; width: 100%; object-fit: cover; height: 700px;}
+article .backgroundsingapore img {float: left; width: 100%; object-fit: cover; height: 700px;}
+
+article .backgroundindonesia .kotak {float: left; position: absolute; left: 50%; top: 20%; transform: translate(-50%, 0); width: 500px;}
+article .backgroundmalaysia .kotak {float: left; position: absolute; left: 50%; top: 20%; transform: translate(-50%, 0); width: 500px;}
+article .backgroundsingapore .kotak {float: left; position: absolute; left: 50%; top: 20%; transform: translate(-50%, 0); width: 500px;}
+
+article .backgroundindonesia .kotak h1 {float: left; position: relative; color: white; left: 50%; transform: translate(-50%, 0);
+	font-size: 200px; font-family: 'Brush Script MT', cursive; font-weight: normal; cursor: default;}
+article .backgroundmalaysia .kotak h1 {float: left; position: relative; color: white; left: 50%; transform: translate(-50%, 0);
+	font-size: 200px; font-family: 'Brush Script MT', cursive; font-weight: normal; cursor: default;}
+article .backgroundsingapore .kotak h1 {float: left; position: relative; color: white; left: 50%; transform: translate(-50%, 0);
+	font-size: 200px; font-family: 'Brush Script MT', cursive; font-weight: normal; cursor: default;}
+
+article .backgroundindonesia .kotak p {float: left; position: relative; color: white;
+	font-size: 20px; font-family: sans-serif; cursor: default; left: 50%; transform: translate(-50%, 0); margin-top: -20px; margin-bottom: 50px;}
+article .backgroundmalaysia .kotak p {float: left; position: relative; color: white;
+	font-size: 20px; font-family: sans-serif; cursor: default; left: 50%; transform: translate(-50%, 0); margin-top: -20px; margin-bottom: 50px;}
+article .backgroundsingapore .kotak p {float: left; position: relative; color: white;
+	font-size: 20px; font-family: sans-serif; cursor: default; left: 50%; transform: translate(-50%, 0); margin-top: -20px; margin-bottom: 50px;}
+
+article .slider button {float: left; position: relative; width: 175px; font-family: sans-serif;
+	font-size: 15px; background-color: #ECB390; color: white; border-radius: 3px; border: none; padding: 20px;
+	cursor: pointer; transition: 0.3s ease-in-out; top: 63%; display: block; left: 50%; transform: translate(-50%, 0)}
+
+article .slider button:hover {background-color: #94B49F}
+
+article .kekanan, .kekiri {width: 50px; height: 120px; line-height: 120px; position: absolute; top: 50%; background: black; opacity: 18%; font-size: 20px;
+	color: white; z-index: 1; transition: 0.45s; cursor: pointer; text-align: center; transform: translate(0,-50%);}
+article .kekanan:hover {background-color: #94B49F; color: black; opacity: 100%; transition: 0.3s;}
+article .kekiri:hover {background-color: #94B49F; color: black; opacity: 100%; transition: 0.3s;}
+article .kekanan {right: 0;}
+article .kekiri {left: 0;}
+
+#indonesia:checked~#INA {opacity: 1;}
+#malaysia:checked~#MYS {opacity: 1;}
+#singapore:checked~#SGR {opacity: 1;}
+
+
+.InputData1 form {
+	width: 100%;
+	height: 100px;
+	float: left;
+	padding-bottom: 30px;
+	padding-top: 30px;
+	background-color: #130f40;
+	
+}
+
+.InputData1 label{
+	margin-left: 75px;
+	display: inline-block;
+	line-height: 70px;
+	font-size : 25px;
+	color : white;
+	text-decoration: bold;
+}
+
+.InputData1 form input{
+	width: 200px;
+	padding: 10px;
+	background: #130f40;
+	font-size: 20px;
+	line-height: 20px;
+	margin-left: 10px;
+	color: white; border-color: white;
+	border-radius: 7px; 
+	
+}
+
+.InputData1 select {
+	width: 200px; font-size: 20px;
+	line-height: 20px; margin-left: 10px;
+	padding: 10px; border-radius:4px;
+	background: #130f40; color: white;
+	border-color: white; border-size: 1px;
+}
+
+.InputData1 button{
+	width: 150px; font-size: 20px;
+	height: 50px; color: white;
+	background-color: #eb4d4b;
+	padding: 10px; font-weight: bold;
+	border-radius: 8px;
+	margin-left: 10px;
+	cursor: pointer;
+	transition : background-color 1s;
+}
+
+.InputData1 button:hover{
+	background-color : #7ed6df;
+}
+
+
+.Destinasi{
+	width : 100%;
+	height: 150px;
+	overflow: hidden;
+	float: left;
+	text-align: center;
+	margin-top: 80px;
+}
+
+
+.Destinasi p{
+	width: 400px;
+	margin-top: 10px;
+	margin-left: 470px;
+	font-size: 17px;
+}
+
+.destinasiWisata {
+	width : 100%;
+	float: left;
+}
+
+.kumpulanfoto .foto img {
+	width : 350px; height: 200px;
+	margin-left: 30px;
+	transition: ease-in-out 0.5s;
+}
+
+.kumpulanfoto .foto {
+	width: 400px;
+	height: 250px;
+	float: left;
+}
+
+.kumpulanfoto{
+	margin: 70px;
+}
+
+.kumpulanfoto .foto {position: relative;}
+
+.kumpulanfoto .foto .nomor {
+	position: absolute;
+	width : 85px;
+	height: auto;
+	background-color: red;
+	border-radius: 25px;
+	text-align: center;
+	bottom : 27%;
+	left: 29%;
+	color: white; padding: 6px;
+	transition : background-color 1s , ease-in-out 0.5s;
+}
+
+.kumpulanfoto .foto .judul {
+	position: absolute;
+	width : 100px;
+	height: auto;
+	font-size: 20px;
+	border-radius: 100px;
+	text-align: center;
+	bottom : 28%;
+	left: 6%;
+	color: white;
+    transition: color 1s , ease-in-out 0.5s;
+}
+
+.kumpulanfoto .foto:hover img{
+	margin-top: 10px;
+}
+
+.kumpulanfoto .foto:hover .judul {
+	color: red; 
+	bottom: 24%;
+}
+
+.kumpulanfoto .foto:hover .nomor{
+	background-color: blue;
+	bottom: 23%;
+}
+
+.InputData2 form {
+	background-color: #130f40;
+	display: inline-block;
+	width: 100%;
+	height: 140px;
+	margin-top: 100px;
+	padding-bottom: 30px;
+	padding-top: 30px;
+}
+
+.InputData2 form .kiri {
+	width: 600px;
+	float: left;
+	margin-left: 20px;
+	text-align: center;
+	
+}
+
+.InputData2 form .kanan {
+	float: left;
+	margin-top: 30px;
+	margin-left: 30px;
+}
+
+
+.InputData2 h1{
+	display: inline-block;
+	line-height: 70px;
+	font-size : 25px;
+	color : white;
+	text-decoration: bold;
+	margin-left: 50px;
+}
+
+.InputData2 p{
+	font-size : 15px;
+	color : gray;
+	text-decoration: bold;
+	margin-left: 50px;
+}
+
+.InputData2 form input{
+	width: 400px;
+	padding: 10px;
+	background: white;
+	font-size: 20px;
+	line-height: 20px;
+	margin-left: 10px;
+	color: black; 
+	border-color: white;
+	border-radius: 7px; 
+	
+}
+
+.InputData2 button{
+	width: 150px; font-size: 20px;
+	height: 50px; color: white;
+	background-color: #eb4d4b;
+	padding: 10px; 
+	font-weight: bold;
+	border-radius: 8px;
+	margin-left: 10px;
+	cursor: pointer;
+	transition : background-color 1s;
+}
+
+.InputData2 button:hover{
+	background-color : #7ed6df;
+}
+
+.popPlace{
+	width : 100%;
+	height: 250px;
+	overflow: hidden;
+	float: left;
+	text-align: center;
+	margin-top: 80px;
+}
+
+.popPlace h1{
+	width: 400px;
+	margin-top: 10px;
+	margin-left: 470px;
+	font-size: 40px;
+}
+
+.popPlace p{
+	width: 400px;
+	margin-top: 10px;
+	margin-left: 470px;
+	font-size: 17px;
+}
+
+.kumpulanplace .foto img {
+	width : 350px; height: 200px;
+	margin-left: 30px;
+}
+
+.kumpulanplace .foto {
+	width: 400px;
+	height: 250px;
+	float: left;
+	margin: 15px;
+	padding-bottom: 100px;
+}
+
+.kumpulanplace .foto {position: relative; transition : box-shadow 0.8s;}
+
+.kumpulanplace .foto:hover{
+	box-shadow: 7px 7px 10px 2px #30336b ;
+}
+
+.kumpulanplace .foto .nomor {
+	position: absolute;
+	width : 50px;
+	height: 20px;
+	background-color: #31C6D4;
+	border-radius: 25px;
+	text-align: center;
+	top : 5%;
+	left: 15%;
+	color: white; padding: 6px;
+	transition : background-color 1s;
+}
+
+.kumpulanplace .foto:hover .nomor {
+	background-color: red;
+}
+
+.kumpulanplace .foto h2 {
+	position: absolute;
+	width : 250px;
+	height: auto;
+	border-radius: 100px;
+	text-align: left;
+	margin-left: 12px;
+	color: blue; 
+	margin-top: 30px;
+}
+
+.kumpulanplace .foto:hover h2 {
+	color: red; 
+}
+
+.kumpulanplace p{
+	position: absolute;
+	width : 200px;
+	height: auto;
+	border-radius: 100px;
+	text-align: center;
+	color: blue; 
+	margin-top: 70px;
+	margin-left: 20px;
+	padding-bottom: 10px;
+}
+
+.kumpulanplace .text{
+	background-color: #F9F9F9;
+	height: 150px;
+	margin-left: 32px;
+	width: 347px;
+	
+}
+
+.text .bintang {
+	color: gold;
+	margin-top : 100px;
+	width: 100%;
+	height: 50px;
+	text-align: left;
+	float: left;
+}
+
+.kumpulanplace .text .bintang a {
+	color: black;
+}
+
+.place button{
+	margin-left: 620px;
+	margin-top: 50px;
+    font-size: 20px;
+    color : white;
+	padding: 5px;
+	width : 150px;
+	height: 60px;
+	background-color: red;
+	border-radius : 10%;
+	border : none;
+	cursor : pointer;
+	transition : opacity 0.5s , background-color 0.5s;
+	margin-bottom: 90px;
+}
+
+.place button:hover{
+	background-color: blue;
+}
+
+.picturebox2 {
+	position: relative;
+}
+
+.picturebox2 img{
+	width: 100%;
+	height : 630px;
+}
+
+.picturebox2 h1 {
+	position: absolute;
+	top: 20%;
+	left: 33%;
+	color : white;
+	font-size: 70px;
+	font-family: Lucida Handwriting;
+}
+
+.picturebox2 .enjoy img {
+	position: absolute;
+	border-radius: 50%;
+	left: 45%;
+	top: 40%;
+	width: 80px;
+	height: 80px;
+}
+
+.play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.play {
+  width: 100px;
+  height: 100px;
+  background: cornflowerblue;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 130px;
+  animation: animate 2s linear infinite;
+  cursor: pointer;
+}
+.play i {
+  color: #fff;
+  font-size: 50px;
+}
+@keyframes animate {
+  0% {
+    box-shadow: 0 0 0 0 cornflowerblue;
+  }
+  40% {
+    box-shadow: 0 0 0 50px rgba(255, 26, 67, 0);
+  }
+  80% {
+    box-shadow: 0 0 0 50px rgba(255, 206, 67, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 rgba(255, 206, 67, 0);
+  }
+}
+
+
+.keunggulan .foto img {
+	width : 70px; height: 70px;
+	margin-left: 120px;
+}
+
+.keunggulan .foto {
+	width: 400px;
+	height: 250px;
+	float: left;
+	margin-top: 150px;
+}
+
+.keunggulan{
+	float: left;
+	width: auto;
+	margin-left: 100px;
+}
+
+.keunggulan .foto {position: relative;}
+
+.keunggulan .foto p {
+	position: absolute;
+	width : 250px;
+	height: auto;
+	border-radius: 100px;
+	text-align: center;
+	color: gray; 
+	padding-left: 40px;
+}
+
+.keunggulan .foto h3 {
+	width : 250px;
+	height: auto;
+	border-radius: 100px;
+	text-align: center;
+	padding-left: 40px;
+}
+
+.kumpulanplace .jam {
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	font-size : 15px;
+	color: black;
+	margin: 5px 0 0 90px;
+}
+
+.kumpulanplace .hari {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	font-size : 15px;
+	color: black;
+	margin-top: 5px;
+	margin-left: 110px;
+}
+
+.quote {
+float: left; 
+width: 100%;
+height: auto;
+margin-top: 70px;
+background-color: #DCF1F1;
+}
+
+.quote .mid {
+width: 100%; 
+float: left; 
+position: relative; 
+height: 500px;
+}
+
+.quote .mid .slideshow {
+float: left; 
+width: 1250px; 
+overflow: hidden; 
+position: absolute; 
+left: 50%; 
+transform: translate(-50%, 0);
+}
+
+.quote .mid .slideshow input {
+display: none;
+}
+
+.quote .mid .slideshow .box {
+height: 500px; 
+float: left; 
+transition: all 0.5s ease;
+}
+
+.quote .mid .slideshow .box .isi {
+width: 1250px; 
+padding-bottom: 135px; 
+float: left;
+margin-top: -25px;
+}
+
+.quote .mid .slideshow .box .isi img {
+width: 140px;
+display: block; 
+margin-left: auto; 
+margin-right: auto; 
+padding-top: 135px; 
+}
+
+.quote .mid .slideshow .box .isi h1 {
+text-align: center;
+margin-left: auto;
+margin-right: auto;
+display: block;
+margin-top: 30px;
+font-family: sans-serif;
+font-weight: normal;
+font-size: 18px;
+}
+
+.quote .mid .slideshow .box .isi p {
+text-align: center;
+margin-left: auto;
+margin-right: auto;
+display: block;
+margin-top: 30px;
+font-family: sans-serif;
+font-weight: normal;
+font-size: 15px;
+color: grey;
+}
+
+.quote .mid .slideshow .dots {
+display: flex; 
+margin: 5px; 
+position: absolute; 
+bottom: 12%; 
+left: 47%;
+}
+
+.quote .mid .slideshow .dots label {
+height: 12px; 
+width: 12px; 
+border-radius: 50%; 
+cursor: pointer; 
+margin: 5px;  
+transition: all 0.2s ease; 
+background-color: #18978F;
+}
+
+#micky:checked~ .box {
+margin-left: 0px;
+}
+
+#tom:checked~ .box {
+margin-left: -1250px;
+}
+
+#jerry:checked~ .box {
+margin-left: -2500px;
+}
+
+#micky:checked~ .dots label#satu {
+background-color: indianred; 
+}
+
+#tom:checked~ .dots label#dua {
+background-color: indianred; 
+}
+
+#jerry:checked~ .dots label#tiga {
+background-color: indianred; 
+}
+
+
+
+.RecentTrips {
+	margin-top: 1200px;
+	width: 100%;
+	height: 600px;
+}
+
+.RecentTrips .Judul {
+	display: grid;
+	place-items: center;
+	margin-top: 100px;
+	font-size : 30px;
+}
+
+.kumpulanRecent{
+	position: relative;
+	margin-top: 40px;
+	margin-left: 120px;
+}
+
+.kumpulanRecent .foto {
+	float: left;
+	width: 350px;
+	margin: 15px;
+}
+
+.kumpulanRecent .foto img {
+	width : 350px;
+	height: 250px;
+	border-radius: 25px;
+}
+
+.kumpulanRecent .foto p {
+	color : gray;
+	margin-top: 10px;
+}
+
+.kumpulanRecent .foto a {
+	text-decoration: none;
+	color: black;
+	transition : color 0.5s;
+}
+
+.kumpulanRecent .foto h1{
+	margin-top : 10px;
+}
+
+.kumpulanRecent .foto a:hover {
+	color: red;
+}
+
+footer {
+	width: 100%;
+	height: 600px;
+	background-color: #130f40;
+}
+
+.isifoot{
+	height: 570px;
+	width:100%;
+	background-color: #130f40;
+	float: left;
+}
+
+.ftravelo{
+	width: 240px;
+	color: gray;
+	padding-top: 100px;
+	padding-left: 100px;
+	float: left;
+	padding-right: 50px;
+}
+
+.tratas{
+	padding-bottom: 50px;
+}
+
+.tratas img{
+	width: 170px;
+}
+
+.trtengah .text p{
+	margin-bottom: 20px;
+	font-size: 17px;
+	color: grey;
+	text-decoration: none;
+	list-style: none;
+}
+
+.trtengah .link p{
+	margin-bottom: 20px;
+	font-size: 17px;
+	color: grey;
+	text-decoration: none;
+	list-style: none;
+	transition : color 0.5s;
+}
+
+.trtengah .link p:hover{
+	margin-bottom: 20px;
+	font-size: 17px;
+	color: red;
+	text-decoration: none;
+	list-style: none;
+}
+
+.trbawah a{
+	font-size: 20px;
+	width: 25px;
+	height: 20px;
+	float: left;
+	margin-top: 29px;
+	margin-right: 15px;
+	color: white;
+	transition: color 0.5s;
+}
+
+.trbawah a:hover{
+	color : red;
+}
+
+.trtengah a {
+	text-decoration: none;
+}
+
+
+.company{
+	padding-top:110px;
+	margin-left: 50px;
+	padding-right: 30px;
+	float: left;
+}
+
+.company h1{
+	color: white;
+	font-size: 26px;
+	margin-bottom: 50px;
+}
+
+.company a {
+	text-decoration: none;
+}
+
+.company p{
+	font-size: 20px;
+	margin-bottom: 10px;
+	text-decoration: none;
+	list-style: none;
+	color: gray;
+	transition: color 0.5s;
+}
+
+.company p:hover {
+	color: red;
+}
+
+.popular{
+	padding-top:110px;
+	margin-left: 50px;
+	float: left;
+}
+
+.popular a {
+	text-decoration: none;
+}
+
+
+.popular p{
+	text-decoration: none;
+	list-style: none;
+	color: gray;
+	transition: color 1s;
+}
+
+.popular p:hover{
+	color: red;
+}
+
+.popular .atas p{
+	color: white;
+	font-size: 26px;
+	margin-bottom: 50px;
+}
+
+.popular .bwhkiri{
+	float: left;
+	padding-right: 50px;
+}
+
+.popular .bwhkiri p{
+	margin-bottom: 10px;
+	font-size: 20px;
+}
+
+.popular .bwhkanan{
+	float: left;
+}
+
+.popular .bwhkanan p{
+	margin-bottom: 10px;
+	font-size: 20px;
+}
+
+.instagram{
+	padding-top:110px;
+	margin-left: 90px;
+	float: left;
+}
+
+.instagram p{
+	text-decoration: none;
+	list-style: none;
+	color: gray;
+}
+
+.instagram .igatas p {
+	color: white;
+	font-size: 26px;
+	margin-bottom: 50px;
+}
+
+.instagram img{
+	width: 70px;
+	height: 70px;
+	padding: 10px;
+	border-radius: 30px;
+}
+
+.copyright {
+	position: absolute;
+	display: block;
+	width: 1000px;
+	margin-top: 520px;
+	margin-left: 160px;
+	border-top: 2px solid black;
+
+}
+
+.copyright p {
+	color: white;
+	margin-top : 20px;
+	margin-left: 21%;
+	font-size: 18px;
+}
+
+.copyright a {
+	margin-left: 5px;
+	text-decoration: none;
+	color: red;
+}
+
+.copyright i {
+	color: red;
+}
